@@ -1,0 +1,19 @@
+{
+  "name": "Update Order",
+  "type": "http",
+  "seq": 4,
+  "request": {
+    "url": "http://localhost:8080/orders/ORD-001",
+    "method": "PUT",
+    "header": [
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "body": {
+      "mode": "json",
+      "json": "{\n  \"orderId\": \"ORD-001\",\n  \"productId\": \"PROD-456\",\n  \"quantity\": 5,\n  \"customerId\": \"CUST-456\",\n  \"amount\": 499.99,\n  \"status\": \"CONFIRMED\"\n}"
+    }
+  }
+}

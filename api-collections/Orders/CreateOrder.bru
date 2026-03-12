@@ -1,0 +1,19 @@
+{
+  "name": "Create Order",
+  "type": "http",
+  "seq": 1,
+  "request": {
+    "url": "http://localhost:8080/orders",
+    "method": "POST",
+    "header": [
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "body": {
+      "mode": "json",
+      "json": "{\n  \"orderId\": \"ORD-001\",\n  \"productId\": \"PROD-123\",\n  \"quantity\": 2,\n  \"customerId\": \"CUST-456\",\n  \"amount\": 199.99\n}"
+    }
+  }
+}
